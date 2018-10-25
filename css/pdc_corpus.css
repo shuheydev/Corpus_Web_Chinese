@@ -1,0 +1,337 @@
+.site-width{
+	width:98%;
+	margin: 0 auto;
+}
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+
+.alertMessage{
+	color:#FF1493;
+}
+
+.borderRed{
+	border:1px solid #FF1493 !important;
+	border-color: #FF1493;
+	background:#fff8f9;
+}
+
+
+html{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height:100%;
+	font-family: arial, sans-serif;
+}
+
+body{
+	color: #444;
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height:100%;
+}
+
+div#container{
+	position: relative;
+	min-height: 100%;
+}
+
+
+/* ヘッダー */
+header{
+	overflow: hidden;
+	margin-bottom: 15px;
+	width: 100%;
+	height:65px;
+	position: relative;
+}
+header h1#title{
+	background:#0068b6;
+	color: white;
+	height:60px;
+	margin:0 15px;
+	margin-left: 150px;
+	padding: 5px 0 0 10px;
+	font-size: 38px;
+	width: 100%;
+}
+#img_pdc_logo{
+	height: 60px;
+	width: 150px;
+	position: absolute;
+	top:5px;
+	left:0;
+}
+
+
+/* ナビゲーション */
+#top-nav{
+	box-sizing: border-box;
+	position: absolute;
+	right:0;
+	bottom:0;
+	height:60px;
+	width:200px;
+
+}
+#top-nav ul{
+	list-style:none;
+
+}
+#top-nav button#button_logout{
+	background: #0068b6 ;
+	text-decoration: underline;
+	width: auto;
+	margin: 5px 5px;
+	float:right;
+	border:none;
+	color:white;
+}
+#top-nav button#button_logout:hover{
+	text-decoration: none;
+}
+form#form_Logout{
+	margin :0;
+
+}
+
+ul.topLevel{
+	padding: 10px;
+}
+
+
+main{
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+
+
+/* 検索条件設定部分 */
+
+#div_inputTextArea{
+	width: 75%;
+	/* height: 250px; */
+	/* background: #888; */
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 0;
+    padding:0px 15px;
+	box-sizing: border-box;
+	float: left;
+}
+#div_jsectionSelectArea{
+	width: 25%;
+	height: 250px;
+	/* background: #666; */
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 0;
+    padding:0 15px;
+	box-sizing: border-box;
+	float: right;
+	overflow-y:scroll;
+	border:1px solid #aaa;
+}
+#table_inputFormTable{
+	width:100%;
+}
+div.div_inputField{
+	/* background: aquamarine; */
+	width: 50%;
+	margin: 0;
+	padding:5px 20px;
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-sizing: border-box;
+}
+
+input.input_searchWordInputField{
+    width: 100%;
+    height: 30px;
+
+    box-sizing: border-box;
+}
+input.input_IPCInputField{
+    width: 80px;
+    height: 30px;
+
+    box-sizing: border-box;
+}
+
+#form_searchCondition{
+	overflow: hidden;
+}
+
+
+#div_inputTextAreaWrapper{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#div_inputTextAreaButtonField{
+	margin-top:20px;
+	box-sizing: border-box;
+	padding: 5 10px;
+	overflow: hidden;
+	width:50%;
+	float:left;
+}
+
+#div_searchResultInfo{
+	/* background: burlywood; */
+	box-sizing: border-box;
+	padding:5 20px;
+	margin: 0;
+	width:50%;
+}
+#div_searchAlertMessage{
+	/* background: burlywood; */
+	box-sizing: border-box;
+	padding:5 20px;
+	margin: 0;
+	width:50%;
+}
+#div_paging_top{
+	/* background: blueviolet; */
+	box-sizing: border-box;
+	padding: 5 10px;
+	overflow: hidden;
+	display: none;
+}
+#div_paging_bottom{
+	/* background: blueviolet; */
+	box-sizing: border-box;
+	padding: 5 10px;
+	overflow: hidden;
+	display: none;
+}
+#JSectionCheckBoxField ul{
+	list-style: none;
+}
+
+
+
+.button_pdccorpus{
+	width: 60px;
+	background: #0068b6 ;
+    border:none;
+	padding: 5px 5px;
+	margin: 0 10px;
+	color:white;
+
+}
+.button_pdccorpus:hover{
+	background: #111;
+	cursor: pointer;
+}
+/* サブミットボタンと通常のボタンを横に並べるとボタンの間に謎の間隔が生じるので、調整のためにサブミットボタン側のマージンを狭くする */
+/* その場しのぎ */
+button.adjustMarginForSubmitbutton{
+	width: 60px;
+	background: #0068b6 ;
+    border:none;
+	padding: 5px 5px;
+	margin: 0 10px 0 5px !important;
+	color:white;
+}
+button.adjustMarginForSubmitbutton:hover{
+            background: #111;
+            cursor: pointer;
+        }
+.buttonDisabled{
+    background:#ccc !important;
+}
+
+
+/* 検索結果表示部分 */
+#div_searchResult{
+	padding: 0 15px;
+	/* margin-left: 10px; */
+}
+
+table.searchResult {
+    color:#424242;
+    background-color:#fcfcfc; 
+    width: 100%;
+    border-collapse: collapse;
+    line-height:200%;
+}
+
+table.searchResult th {
+    text-align: center;
+    padding: 10px 2px;
+    border-top: 1px solid #999999;
+    border-bottom: 4px solid #0068b6;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+table.searchResult td { /* TD */
+    padding: 10px;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+table.searchResult td.chinese{
+	font-family:'SimSun';
+	vertical-align:top;
+	word-break:break-all;
+}
+table.searchResult td.japanese{
+	font-family:'MS Mincho';
+	vertical-align:top;
+    word-break:break-all;
+}
+table.searchResult td.other{
+	font-family:'MS PMincho';
+	Vertical-align:center;
+}
+table.searchResult span.searchwords_ch{
+	color:red;
+	font-weight:bold;
+}
+table.searchResult span.searchwords_jp{
+	color:red;
+	font-weight:bold;
+}
+
+
+#form_prevNextButtonArea_Bottom{
+	float:right;
+	margin: 15px;
+}
+
+
+/* フッター */
+footer{
+	height: 50px;
+    font-size: 12px;
+    padding: 15px;
+    background: #0068b6;
+    text-align:center;
+	color:#f6f5f5;
+	margin-top: 30px;
+	position:absolute;
+	bottom:0;
+	width: 100%;
+	box-sizing: border-box;
+}
+footer a{
+    color: #f6f5f5;
+}
+a:hover{
+	text-decoration: none;  
+} 
+
+
+
+
+

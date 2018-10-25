@@ -1,0 +1,3 @@
+DirectoryIndex pdccorpus.php
+ErrorDocument 403 /corpus_chinese/error/e403.html
+ErrorDocument 404 /corpus_chinese/error/e404.html
